@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --border: 1px solid #ffffff1a;
+}
+
+body, table, button, input{
+    font: 300 18px/120% 'Embed code', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #121214;
+    color: white;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 2% 2%;
+}
+
+
+form{
+    border: var(--border);
+    border-inline: none;
+    padding: 20px 0;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset > div{
+    display: flex;
+    gap: 12px;
+}
+
+fieldset button{
+    width: fit-content;
+    border: 0;
+    background-color: #F48F56;
+    border-radius: 10px;
+    padding: 1%;
+    font: 700  'Embed code', sans-serif;
+    color: #00292e;
+}
+
+fieldset button:hover{
+    background: #d3692b;
+}
+
+fieldset legend, section h2{
+    font: 700 16px/140% 'Embed code', sans-serif;
+    padding-bottom: 1%;
+    color: #e1e1e6;
+}
+
+.lista-participantes{
+    padding: 2% 0;
+}
+
+.lista-participantes > div{
+    border: var(--border);
+    border-radius: 8px;
+}
+
+.input-wrapper{
+     flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: var(--border);
+    border-radius: 10px;
+    padding: 1%;
+    font: 400 14px/150% 'Embed code', sans-serif;
+    color: #c4c4cc;
+}
+
+input{
+    all: unset;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead th,
+tbody td {
+  padding: 2%;
+}
+
+tbody td{
+    border-top: var(--border);
+    padding: 12px 8px;
+    line-height: 15px;
+    color: #c4c4cc;
+    font-size: 16 px;
+}
+
+tbody td strong{
+    font-size: 16px;
+    color: white;
+}
+
+tbody td small{
+    font-size: 12px;
+}
+
+table button{
+    all: unset;
+    color: #F48F56;
+}
+
+tbody td button:hover{
+    color: #d3692b;
+    text-decoration: underline;
+}
